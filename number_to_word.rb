@@ -46,10 +46,10 @@ private
   # Breaks num_string into 3 digit chunks. Prepends 0s to make string
   # a multiple of 3 chars long if necessary
   def self.break_into_three_digit_chunks(num_string)
-    zeros_to_append = num_string.size % CHUNK_SIZE == 0 \
+    zeros_to_prepend = num_string.size % CHUNK_SIZE == 0 \
                       ? 0 \
                       : CHUNK_SIZE - (num_string.size % CHUNK_SIZE) 
-    zeros_to_append.times { num_string.prepend("0") }
+    zeros_to_prepend.times { num_string.prepend("0") }
     num_string.scan(/.../)
   end
 
