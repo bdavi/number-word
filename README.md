@@ -1,7 +1,7 @@
 # number-word
 
 ## Summary
-NumberWord is a command line application which accepts a Ruby integer literal and prints the extended english spelling of that number.
+NumberWord is a command line application which accepts a Ruby integer literal and prints the full English spelling of that number.
 
 ## Example usage
 
